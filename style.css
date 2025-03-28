@@ -1,20 +1,46 @@
+:root {
+    --cor-primaria: #ff85a2; /* Rosa moderno */
+    --cor-secundaria: #a78bfa; /* Lilás */
+    --fonte: 'Montserrat', sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--fonte);
     margin: 0;
-    padding: 0;
+    background-color: #fff9fb;
 }
+
 header {
-    background: #333;
-    color: white;
-    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.hero {
+    background: linear-gradient(rgba(255,255,255,0.7), url('images/hero-bg.jpg');
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
-footer {
-    background: #333;
+
+.btn {
+    background: var(--cor-primaria);
     color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255,133,162,0.4);
 }
