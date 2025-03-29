@@ -31,16 +31,53 @@ header {
 }
 
 .btn {
+    /* Cores e aparência */
     background: var(--cor-primaria);
     color: white;
+    border: 2px solid var(--cor-primaria); /* Adiciona borda para melhor contraste */
+    
+    /* Espaçamento e forma */
     padding: 12px 30px;
-    border-radius: 30px;
-    text-decoration: none;
+    border-radius: 30px; /* Bordas completamente arredondadas */
+    
+    /* Tipografia */
+    font-family: var(--fonte); /* Consistência com o design system */
     font-weight: bold;
-    transition: all 0.3s;
+    font-size: 1rem; /* Tamanho explícito para melhor controle */
+    text-decoration: none;
+    text-align: center;
+    
+    /* Efeitos e transições */
+    transition: all 0.3s ease; /* Suaviza todas as propriedades */
+    cursor: pointer; /* Mãozinha ao passar o mouse */
+    
+    /* Layout */
+    display: inline-block; /* Permite padding e mantém em linha */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil */
 }
 
+/* Estado hover - Interatividade */
 .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(255,133,162,0.4);
+    background: transparent;
+    color: var(--cor-primaria);
+    transform: translateY(-2px); /* Efeito de levitação */
+    box-shadow: 0 5px 15px rgba(255, 133, 162, 0.3); /* Sombra mais pronunciada */
+}
+
+/* Estado active - Quando clicado */
+.btn:active {
+    transform: translateY(0); /* Remove o efeito de levitação */
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2); /* Sombra mais próxima */
+}
+
+/* Variações de botão (opcional) */
+.btn.secondary {
+    background: transparent;
+    color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+}
+
+.btn.secondary:hover {
+    background: var(--cor-primaria);
+    color: white;
 }
