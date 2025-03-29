@@ -4,7 +4,7 @@ const produtos = [
         nome: 'Base Líquida HD',
         categoria: 'maquiagem',
         preco: 89.90,
-        imagem: 'images/produtos/base-hd.jpg',
+        imagem: 'https://i.pinimg.com/736x/97/ee/22/97ee223cc886f0ebf2751edef7eae047.jpg',
         descricao: 'Cobertura média a alta com acabamento natural',
         ingredientes: ['Água', 'Óleo de Jojoba', 'Pigmentos minerais'],
         disponivel: true
@@ -14,7 +14,7 @@ const produtos = [
         nome: 'Serum Vitamina C',
         categoria: 'skincare',
         preco: 129.90,
-        imagem: 'images/produtos/serum-vitc.jpg',
+        imagem: 'https://i.pinimg.com/736x/fe/1c/19/fe1c19d2c7f4a567fffab3736b08299d.jpg',
         descricao: 'Clareador e antioxidante potente',
         ingredientes: ['Vitamina C 20%', 'Ácido Ferúlico', 'Ácido Hialurônico'],
         disponivel: true
